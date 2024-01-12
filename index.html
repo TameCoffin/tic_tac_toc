@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Tig Tag Tog</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="heading text-center">It's "Tig Tag Tog", dog.</h1>
+            <p class="game-status text-center" id="gameStatus"></p>
+            <div class="row">
+                <div class="col-3 offset-9">
+                    <form action="#" class="form player-form" id="player-form">
+                        <div class="mb-3">
+                            <label for="player1" class="form-label">Player 1:</label>
+                            <input type="text" maxlength="3" value="" name="player1" id="player1" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="player2" class="form-label">Player 2:</label>
+                            <input type="text" maxlength="3" value="" name="player2" id="player2" class="form-control">
+                        </div>
+                        <input type="submit" id="submitBtn" class="btn btn-warning submit-btn text-capitalize" value="submit players">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="container">
+            <div class="row">
+                <section class="col-3 x-section red">
+                    <h2 class="wins red" id="playerOne"></h2>
+                    <div class="win-count red" id="xWins"></div>
+                </section> 
+                <section class="col-6">
+                    <!-- Gameboard goes here -->
+                    <section class="game-board" id="gameboard">
+                        <div data-cell-index="0" class="cell"></div>
+                        <div data-cell-index="1" class="cell"></div>
+                        <div data-cell-index="2" class="cell"></div>
+                        <div data-cell-index="3" class="cell"></div>
+                        <div data-cell-index="4" class="cell"></div>
+                        <div data-cell-index="5" class="cell"></div>
+                        <div data-cell-index="6" class="cell"></div>
+                        <div data-cell-index="7" class="cell"></div>
+                        <div data-cell-index="8" class="cell"></div>
+                    </section>
+                </section>
+                <section class="col-3 o-section blue">
+                    <h2 class="wins blue" id="playerTwo"></h2>
+                    <div class="win-count blue" id="oWins"></div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-info game-restart text-capitalize" id="gameRestart">restart game</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
